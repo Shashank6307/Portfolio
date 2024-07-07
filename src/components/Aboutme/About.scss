@@ -1,0 +1,145 @@
+.about {
+  margin: 50px 220px;
+  // border: 2px solid green;
+  height: 80vh;
+  padding-top: 100px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 2.4cm;
+    .left {
+      border: none;
+      border-radius: 25px;
+      //   position: relative;
+      img {
+        width: 440px;
+        height: 410px;
+        border-radius: 35px;
+      }
+    }
+    .right {
+      h2 {
+        color: blue;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 0.8cm;
+        margin: 20px 0px;
+        color: rgb(83, 83, 83);
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .about {
+    // max-width: 100%;
+    height: 100vh;
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      // min-width: fit-content;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      // border: 2px solid black;
+      padding-top: 20px;
+
+      .right {
+        text-align: center;
+
+        h2 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        h3 {
+          margin-top: 0;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    height: 100%;
+    margin: 10px 20px;
+
+    margin-top: 10vh;
+    .container {
+      max-width: 100%;
+      margin-left: 0px;
+      // border: 2px solid blue;
+
+      .left img {
+        width: 380px;
+        height: 320px;
+        // border: 2px solid yellow;
+      }
+
+      .right {
+        //
+        margin-top: 20px;
+        margin-bottom: 50px;
+        h2 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+          margin: 0px 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    height: 100%;
+
+    margin-top: -110px;
+    // margin-bottom: ;
+    .container {
+      max-width: 100%;
+
+      .left img {
+        width: 300px;
+        height: 220px;
+      }
+
+      .right {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 22px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+          margin: 0px 50px;
+          line-height: 0.5cm;
+
+          p {
+            margin: 2px 0px;
+          }
+        }
+      }
+    }
+  }
+}

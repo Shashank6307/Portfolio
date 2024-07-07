@@ -1,0 +1,19 @@
+.image-container {
+  position: relative;
+  width: 500px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  .visible {
+    opacity: 1;
+  }
+  .hidden {
+    transform: translateY(100%);
+  }
+}

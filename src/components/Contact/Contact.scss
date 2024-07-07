@@ -1,0 +1,155 @@
+.contact {
+  margin: 20px 220px;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  gap: 4cm;
+  height: 50vh;
+  margin-top: 50px;
+  margin-bottom: 4rem;
+
+  .map {
+    width: 640px;
+    height: 310px;
+
+    iframe {
+      width: 640px;
+      height: 310px;
+      border-radius: 35px;
+    }
+  }
+
+  .right {
+    h2 {
+      color: blue;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .mail {
+      display: flex;
+      align-items: center;
+      justify-self: start;
+      gap: 18px;
+      img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .mail_about {
+        h4 {
+          margin-bottom: 4px;
+          font-size: 18px;
+        }
+        p {
+          margin-top: 0;
+
+          a {
+            text-decoration: none;
+            color: rgb(83, 83, 83);
+            font-size: 18px;
+
+            &:hover {
+              color: blue;
+            }
+          }
+        }
+        font-size: 21px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .contact {
+    max-width: 80%;
+    margin: 10px auto;
+    // border: 2px solid black;
+    padding: 10px 20px;
+
+    .right h2 {
+      font-size: 21px;
+    }
+    .right h3 {
+      font-size: 25px;
+    }
+
+    .right .mail img {
+      width: 40px;
+      height: 40px;
+    }
+    .right .mail .mail_about {
+      h4 {
+        font-size: 16px;
+      }
+      p a {
+        font-size: 15px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .contact {
+    max-width: 80%;
+    margin: 10px auto;
+    // border: 2px solid black;
+    padding: 10px 20px;
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // border: 2px solid green;
+      width: 100%;
+      gap: 28px;
+
+      margin: 0px auto;
+    }
+    .right h2 {
+      font-size: 18px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .right h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .right .mail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .right .mail .mail_about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .right .mail img {
+      width: 40px;
+      height: 40px;
+    }
+    .right .mail .mail_about h4 {
+      margin-top: 2px;
+    }
+    .right .mail .mail_about p {
+      margin-bottom: 10px;
+    }
+    // .right .mail .mail_about {
+    //   h4 {
+    //     font-size: 16px;
+    //   }
+    //   p a {
+    //     font-size: 15px;
+    //     margin-top: 0;
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,213 @@
+.workingarea {
+  background: linear-gradient(180deg, #fdfdfd, #f7f6f6);
+  padding-top: 20px;
+  height: 100%;
+  padding-bottom: 3rem;
+
+  h1 {
+    text-align: center;
+  }
+  /* .title {
+    text-align: center;
+    margin-bottom: 3rem;
+  } */
+  .project {
+    margin: 20px 200px;
+    height: 100%;
+    /* // border: 2px solid black; */
+
+    .title {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 58px;
+      margin-bottom: 7rem;
+    }
+
+    .project-1 {
+      position: relative;
+      width: 100%;
+      height: fit-content;
+      width: 29cm;
+      display: flex;
+      align-items: center;
+      justify-self: start;
+      gap: 1.5cm;
+      margin-top: 5rem;
+      margin-bottom: 7rem;
+
+      .video-container {
+        /* // position: relative; */
+        width: 17cm; /* Adjust width as needed */
+        height: 9.5cm; /* Adjust height as needed */
+        overflow: hidden;
+        border-radius: 35px;
+        cursor: pointer;
+        border: 2px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.5);
+
+        .video {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+      }
+
+      .discription {
+        width: 10cm;
+        height: 10cm;
+        .btns {
+          display: flex;
+          align-items: center;
+          justify-self: start;
+          gap: 20px;
+
+          button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #45a049;
+            }
+          }
+        }
+        gap: 20px;
+        h3 {
+          font-size: 30px;
+          color: blue;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 0.7cm;
+          margin: 20px 0px;
+          color: rgb(83, 83, 83);
+        }
+      }
+    }
+    hr {
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .workingarea {
+    width: 80vw;
+    margin: 10px auto;
+    /* border: 2px solid blue; */
+
+    .project {
+      /* // max-width: 100%; */
+      width: 100%;
+
+      h1 {
+        margin-bottom: 40px;
+      }
+      margin: 2px auto;
+      .project-1 {
+        /* margin: 5px 5px; */
+        width: 100%;
+        /* // border: 2px solid black; */
+        height: 100%;
+        margin-top: 0;
+
+        .discription {
+          /* // font-size: 12px; */
+          padding-bottom: 0;
+          padding-left: 20px;
+          padding-right: 20px;
+          .btns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            button {
+              width: fit-content;
+              height: 40px;
+              text-align: center;
+              /* // padding: 20px; */
+              margin-bottom: 5px;
+            }
+          }
+          h3 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 11px;
+          }
+        }
+        .video-container {
+          width: 550px;
+          height: 250px;
+          margin: 0px 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .workingarea .project .title {
+    margin-bottom: 50px;
+  }
+  .workingarea .project .project-1 .discription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 2px;
+    line-height: 0.2cm;
+    height: fit-content;
+  }
+  .workingarea .project .project-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .workingarea .project .project-1 .discription h3 {
+    font-size: 33px;
+    margin-top: -40px;
+    margin-bottom: 0;
+  }
+  .workingarea .project .project-1 .discription p {
+    font-size: 12px;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .workingarea .project .project-1 .video-container {
+    /* // border: 2px solid red; */
+    margin-top: 5px;
+    /* // padding: auto; */
+    width: 310px;
+    height: 220px;
+  }
+  .workingarea .project .project-1 .discription .btns {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    /* border: 2px solid black; */
+  }
+  .workingarea h1 {
+    text-align: center;
+    font-size: 21px;
+  }
+  .workingarea .project .title {
+    font-size: 48px;
+  }
+}
